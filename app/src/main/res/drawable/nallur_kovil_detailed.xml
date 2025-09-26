@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="300dp"
+    android:viewportWidth="400"
+    android:viewportHeight="300">
+    
+    <!-- Sky background -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0 L400,0 L400,100 L0,100 Z"/>
+    
+    <!-- Temple main structure -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M100,100 L300,100 L300,200 L100,200 Z"/>
+    
+    <!-- Temple tower (Gopuram) -->
+    <path
+        android:fillColor="#FF8C00"
+        android:pathData="M150,50 Q200,20 250,50 L250,100 L150,100 Z"/>
+    
+    <!-- Temple tower levels -->
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M160,60 Q200,40 240,60 L240,90 L160,90 Z"/>
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M170,70 Q200,50 230,70 L230,80 L170,80 Z"/>
+    
+    <!-- Temple entrance -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M180,100 L180,200 L220,200 L220,100 Z"/>
+    
+    <!-- Temple pillars -->
+    <path
+        android:fillColor="#CD853F"
+        android:pathData="M120,100 L120,180 L130,180 L130,100 Z"/>
+    <path
+        android:fillColor="#CD853F"
+        android:pathData="M270,100 L270,180 L280,180 L280,100 Z"/>
+    
+    <!-- Ground -->
+    <path
+        android:fillColor="#90EE90"
+        android:pathData="M0,200 L400,200 L400,300 L0,300 Z"/>
+    
+    <!-- Temple decorations -->
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M200,75 A5,5 0 1,1 200,85 A5,5 0 1,1 200,75 Z"/>
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M190,82 A3,3 0 1,1 190,88 A3,3 0 1,1 190,82 Z"/>
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M210,82 A3,3 0 1,1 210,88 A3,3 0 1,1 210,82 Z"/>
+</vector>

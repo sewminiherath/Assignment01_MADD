@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="171dp"
+    android:height="193dp"
+    android:viewportWidth="171"
+    android:viewportHeight="193">
+    <!-- Large bell icon with detailed design -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M85.5,20C55.1,20 30,45.1 30,75.5v40c0,5.5 4.5,10 10,10h91c5.5,0 10,-4.5 10,-10v-40C141,45.1 115.9,20 85.5,20zM85.5,40C65.1,40 50,55.1 50,75.5v40c0,2.8 2.2,5 5,5h61c2.8,0 5,-2.2 5,-5v-40C121,55.1 105.9,40 85.5,40z"/>
+    <!-- Bell clapper -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M85.5,130c-2.8,0 -5,2.2 -5,5v8c0,2.8 2.2,5 5,5s5,-2.2 5,-5v-8C90.5,132.2 88.3,130 85.5,130z"/>
+    <!-- Bell handle -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M85.5,10c-2.8,0 -5,2.2 -5,5v5c0,2.8 2.2,5 5,5s5,-2.2 5,-5v-5C90.5,12.2 88.3,10 85.5,10z"/>
+</vector>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="149dp"
+    android:height="100dp"
+    android:viewportWidth="149"
+    android:viewportHeight="100">
+    
+    <!-- Store background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0 L149,0 L149,100 L0,100 Z" />
+    
+    <!-- Store front -->
+    <path
+        android:fillColor="#F8F9FA"
+        android:pathData="M10,20 L139,20 L139,80 L10,80 Z" />
+    
+    <!-- Store sign -->
+    <path
+        android:fillColor="#E74C3C"
+        android:pathData="M20,25 L129,25 L129,45 L20,45 Z" />
+    
+    <!-- Store name text area -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,30 L119,30 L119,40 L30,40 Z" />
+    
+    <!-- Store windows -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M25,50 L45,50 L45,70 L25,70 Z" />
+    
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M55,50 L75,50 L75,70 L55,70 Z" />
+    
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M85,50 L105,50 L105,70 L85,70 Z" />
+    
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M115,50 L135,50 L135,70 L115,70 Z" />
+    
+    <!-- Store door -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M65,50 L85,50 L85,80 L65,80 Z" />
+    
+    <!-- Ice cream cone decoration -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M70,30 L80,30 L80,40 L70,40 Z" />
+    
+    <!-- Text placeholder -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,85 L149,85 L149,100 L0,100 Z" />
+</vector>
+
+

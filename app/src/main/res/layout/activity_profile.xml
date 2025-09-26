@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark"
+        android:padding="0dp">
+
+<!--        &lt;!&ndash; Status bar icons &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:id="@+id/status_icon_1"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="19dp"-->
+<!--            android:layout_marginStart="29dp"-->
+<!--            android:layout_marginTop="3dp"-->
+<!--            android:src="@drawable/ic_signal"-->
+<!--            android:contentDescription="Signal" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/status_icon_2"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="63dp"-->
+<!--            android:layout_marginTop="3dp"-->
+<!--            android:src="@drawable/ic_battery"-->
+<!--            android:contentDescription="Battery" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/status_icon_3"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="17dp"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:src="@drawable/ic_wifi"-->
+<!--            android:contentDescription="WiFi" />-->
+
+<!--        &lt;!&ndash; Time display &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/time_text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="21dp"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="10:55"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="10sp"-->
+<!--            android:textStyle="bold" />-->
+
+        <!-- Profile image -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/profile_photo_placeholder"
+            android:contentDescription="Profile image"
+            android:scaleType="centerCrop" />
+
+        <!-- Camera icon overlay -->
+        <ImageView
+            android:id="@+id/camera_icon"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_alignEnd="@+id/profile_image"
+            android:layout_alignBottom="@+id/profile_image"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/ic_camera"
+            android:contentDescription="Change photo"
+            android:padding="8dp" />
+
+        <!-- Your Information section -->
+        <TextView
+            android:id="@+id/your_information_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="268dp"
+            android:text="@string/your_information"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/your_information_title"
+            android:layout_marginTop="33dp"
+            android:background="@color/divider_color" />
+
+        <!-- Full Name section -->
+        <ImageView
+            android:id="@+id/name_icon"
+            android:layout_width="30dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="22dp"
+            android:layout_below="@+id/your_information_title"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_person"
+            android:contentDescription="Name icon" />
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_alignTop="@+id/name_icon"
+            android:text="@string/full_name"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_below="@+id/name_label"
+            android:layout_marginTop="4dp"
+            android:text="@string/henri_allen"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/name_value"
+            android:layout_marginTop="31dp"
+            android:background="@color/divider_color" />
+
+        <!-- Mobile section -->
+        <ImageView
+            android:id="@+id/mobile_icon"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="22dp"
+            android:layout_below="@+id/name_value"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_phone"
+            android:contentDescription="Mobile icon" />
+
+        <TextView
+            android:id="@+id/mobile_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_alignTop="@+id/mobile_icon"
+            android:text="@string/mobile"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/mobile_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_below="@+id/mobile_label"
+            android:layout_marginTop="4dp"
+            android:text="@string/contact_number_placeholder"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/mobile_value"
+            android:layout_marginTop="33dp"
+            android:background="@color/divider_color" />
+
+        <!-- Email section -->
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_below="@+id/mobile_value"
+            android:layout_marginTop="50dp"
+            android:text="@string/email"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/email_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_below="@+id/email_label"
+            android:layout_marginTop="4dp"
+            android:text="@string/email_placeholder"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/email_value"
+            android:layout_marginTop="39dp"
+            android:background="@color/divider_color" />
+
+        <!-- Gender section -->
+        <ImageView
+            android:id="@+id/gender_icon"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="24dp"
+            android:layout_below="@+id/email_value"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_gender"
+            android:contentDescription="Gender icon" />
+
+        <TextView
+            android:id="@+id/gender_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_alignTop="@+id/gender_icon"
+            android:text="@string/gender"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gender_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_below="@+id/gender_label"
+            android:layout_marginTop="4dp"
+            android:text="@string/female"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Your Preferences section -->
+        <TextView
+            android:id="@+id/your_preferences_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_below="@+id/gender_value"
+            android:layout_marginTop="63dp"
+            android:text="@string/your_preferences"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/your_preferences_title"
+            android:layout_marginTop="33dp"
+            android:background="@color/divider_color" />
+
+        <!-- Emergency contacts section -->
+        <ImageView
+            android:id="@+id/emergency_icon"
+            android:layout_width="35dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="21dp"
+            android:layout_below="@+id/your_preferences_title"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_emergency"
+            android:contentDescription="Emergency icon" />
+
+        <TextView
+            android:id="@+id/emergency_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_alignTop="@+id/emergency_icon"
+            android:text="@string/add_emergency_contacts"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/emergency_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_below="@+id/emergency_label"
+            android:layout_marginTop="4dp"
+            android:text="@string/one_contact"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/emergency_value"
+            android:layout_marginTop="31dp"
+            android:background="@color/divider_color" />
+
+        <!-- Additional settings section -->
+        <ImageView
+            android:id="@+id/settings_icon"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_below="@+id/emergency_value"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_settings"
+            android:contentDescription="Settings icon" />
+
+        <TextView
+            android:id="@+id/settings_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_alignTop="@+id/settings_icon"
+            android:text="@string/additional_settings"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/delete_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_below="@+id/settings_label"
+            android:layout_marginTop="4dp"
+            android:text="@string/delete_account"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/delete_account"
+            android:layout_marginTop="34dp"
+            android:background="@color/divider_color" />
+
+        <!-- Logout button -->
+        <RelativeLayout
+            android:id="@+id/logout_button"
+            android:layout_width="165dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/delete_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/share_plan_button_orange"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/logout_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/logout"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="414dp"
+    android:height="500dp"
+    android:viewportWidth="414"
+    android:viewportHeight="500">
+    
+    <!-- Sky background -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0 L414,0 L414,500 L0,500 Z" />
+    
+    <!-- Clouds -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,80 C70,60 90,60 110,80 C130,60 150,60 170,80 C190,60 210,60 230,80 C250,60 270,60 290,80 C310,60 330,60 350,80 C370,60 390,60 414,80 L414,120 L0,120 Z" />
+    
+    <!-- Mountain background -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M0,200 L414,200 L414,500 L0,500 Z" />
+    
+    <!-- Waterfall -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M180,100 L234,100 L234,300 L180,300 Z" />
+    
+    <!-- Waterfall tiers -->
+    <path
+        android:fillColor="#F0F8FF"
+        android:pathData="M185,150 L229,150 L229,200 L185,200 Z" />
+    
+    <path
+        android:fillColor="#F0F8FF"
+        android:pathData="M190,200 L224,200 L224,250 L190,250 Z" />
+    
+    <path
+        android:fillColor="#F0F8FF"
+        android:pathData="M195,250 L219,250 L219,300 L195,300 Z" />
+    
+    <!-- Rocks around waterfall -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M160,250 L180,250 L180,300 L160,300 Z" />
+    
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M234,250 L254,250 L254,300 L234,300 Z" />
+    
+    <!-- Trees and foliage -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M100,200 L140,200 L140,300 L100,300 Z" />
+    
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M274,200 L314,200 L314,300 L274,300 Z" />
+    
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M50,250 L100,250 L100,350 L50,350 Z" />
+    
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M314,250 L364,250 L364,350 L314,350 Z" />
+    
+    <!-- Water pool at bottom -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M150,300 L264,300 L264,350 L150,350 Z" />
+    
+    <!-- Moss on rocks -->
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M165,280 L175,280 L175,290 L165,290 Z" />
+    
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M239,280 L249,280 L249,290 L239,290 Z" />
+    
+    <!-- Text overlay -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,400 L414,400 L414,420 L0,420 Z" />
+</vector>
+
+

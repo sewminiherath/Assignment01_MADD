@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Smart Travel</string>
+    <string name="welcome">Welcome!</string>
+    <string name="sign_in_prompt">Sign in to your account</string>
+    <string name="email_hint">Email or Username</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="no_account">You have no account?</string>
+    <string name="sign_up_now">Sign up now</string>
+
+    <!-- Home screen strings -->
+    <string name="greeting">Hi, Alex!</string>
+    <string name="location">Sri Lanka</string>
+    <string name="search_hint">Search Destination here</string>
+    <string name="planner">Planner</string>
+    <string name="explore">Explore</string>
+    <string name="itineraries">Itineraries</string>
+    <string name="emergency">Emergency</string>
+    <string name="recommended">Recommended</string>
+    <string name="view_all">View All</string>
+    <string name="profile_description">User profile image</string>
+    <string name="search_description">Search destinations</string>
+    <string name="planner_description">Open trip planner</string>
+    <string name="explore_description">Explore destinations</string>
+    <string name="itineraries_description">View itineraries</string>
+    <string name="emergency_description">Emergency services</string>
+    <string name="view_all_description">View all recommendations</string>
+
+    <!-- Emergency screen strings -->
+    <string name="back_button_description">Go back</string>
+    <string name="emergency_contacts_title">Your emergency contacts</string>
+    <string name="your_emergency_contacts">Your emergency contacts</string>
+    <string name="add_emergency_contact">Add emergency contact</string>
+    <string name="emergency_services">Emergency services</string>
+    <string name="police">Police</string>
+    <string name="fire">Fire</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="customer_care">CustomerCare</string>
+
+    <!-- Location detail strings -->
+    <string name="nearby_restaurants">Nearby Restaurants</string>
+    <string name="add_to_planner">Add to planner</string>
+
+    <!-- Profile screen strings -->
+    <string name="profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="your_information">Your Information</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="your_preferences">Your Preferences</string>
+    <string name="add_emergency_contacts">Add emergency contacts</string>
+    <string name="additional_settings">Additional Settings</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="logout">Logout</string>
+
+    <!-- Create Account strings -->
+    <string name="create_account">Create Account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="address">Address</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="email">E-mail</string>
+    <string name="gender">Gender</string>
+    <string name="next">Next</string>
+
+    <!-- Success screen strings -->
+    <string name="success">SUCCESS</string>
+    <string name="account_created_successfully">Account created successfully</string>
+    <string name="log_in">Log In</string>
+
+    <!-- Notifications screen strings -->
+    <string name="notifications">Notifications</string>
+    <string name="you_have_no_notifications">You have no notifications</string>
+
+    <!-- Bottom Navigation strings -->
+    <string name="nav_location">Location</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Content Description strings -->
+    <string name="profile_image">Profile image</string>
+    <string name="search_icon">Search icon</string>
+    <string name="camera_icon">Camera icon</string>
+    <string name="planner_icon">Planner icon</string>
+    <string name="explore_icon">Explore icon</string>
+    <string name="itineraries_icon">Itineraries icon</string>
+    <string name="emergency_icon">Emergency icon</string>
+    <string name="destination_1">Destination 1</string>
+    <string name="destination_2">Destination 2</string>
+    <string name="destination_3">Destination 3</string>
+    <string name="destination_4">Destination 4</string>
+    <string name="location_icon">Location icon</string>
+    <string name="home_icon">Home icon</string>
+    <string name="notifications_icon">Notifications icon</string>
+    <string name="profile_icon">Profile icon</string>
+
+    <!-- Profile screen additional strings -->
+    <string name="henri_allen">Henri Allen</string>
+    <string name="contact_number_placeholder">+94765559561</string>
+    <string name="email_placeholder">alex9995@gmail.com</string>
+    <string name="female">Female</string>
+    <string name="one_contact">1 contact</string>
+
+    <!-- Planner screen strings -->
+    <string name="my_trip">My Trip</string>
+    <string name="one_day">1 Day</string>
+    <string name="duration">Duration</string>
+    <string name="day_01">Day 01</string>
+    <string name="destination_01">Destination 01</string>
+    <string name="destination_02">Destination 02</string>
+    <string name="destination_03">Destination 03</string>
+    <string name="destination_04">Destination 04</string>
+    <string name="destination_05">Destination 05</string>
+    <string name="destination_06">Destination 06</string>
+    <string name="check_out">Check Out</string>
+
+    <!-- Additional content descriptions -->
+    <string name="calendar_icon">Calendar icon</string>
+    <string name="dropdown_icon">Dropdown icon</string>
+
+    <!-- Forgot Password screen strings -->
+    <string name="forgot_password_subtitle">Don\'t worry! Enter your email address and we\'ll send you a link to reset your password.</string>
+    <string name="email_address">Email Address</string>
+    <string name="email_hint_forgot">Enter your email address</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="back_to_signin">Back to Sign In</string>
+    <string name="reset_link_sent">Reset link sent to your email</string>
+    <string name="enter_valid_email">Please enter a valid email address</string>
+    <string name="sending_reset_link">Sending reset link...</string>
+    <string name="success_icon">Success icon</string>
+
+</resources>

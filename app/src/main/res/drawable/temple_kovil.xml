@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="165dp"
+    android:height="207dp"
+    android:viewportWidth="165"
+    android:viewportHeight="207">
+    <!-- Sky -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0L165,0L165,60L0,60L0,0z" />
+    <!-- Temple Base -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M30,60L135,60L135,180L30,180L30,60z" />
+    <!-- Temple Tiers -->
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M40,80L125,80L125,100L40,100L40,80z" />
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M50,100L115,100L115,120L50,120L50,100z" />
+    <path
+        android:fillColor="#FFA500"
+        android:pathData="M60,120L105,120L105,140L60,140L60,120z" />
+    <!-- Red Striped Wall -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,100L30,100L30,180L10,180L10,100z" />
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M10,110L30,110L30,120L10,120L10,110z" />
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M10,130L30,130L30,140L10,140L10,130z" />
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M10,150L30,150L30,160L10,160L10,150z" />
+    <!-- Palm Trees -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M140,80L150,60L160,80L140,80z" />
+</vector>
+
+

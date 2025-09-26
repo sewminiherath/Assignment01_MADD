@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="65dp"
+    android:height="63dp"
+    android:viewportWidth="65"
+    android:viewportHeight="63">
+    <!-- Face -->
+    <path
+        android:fillColor="#FDBCB4"
+        android:pathData="M32.5,5C20.5,5 10.8,14.7 10.8,26.7c0,8.5 4.5,16 11.2,20.3L32.5,63l10.5,-16c6.7,-4.3 11.2,-11.8 11.2,-20.3C54.2,14.7 44.5,5 32.5,5z" />
+    <!-- Hair -->
+    <path
+        android:fillColor="#FF8C00"
+        android:pathData="M32.5,8C21.8,8 13.1,16.7 13.1,27.4c0,7.8 4.1,14.7 10.3,18.5L32.5,60l9.1,-14.1c6.2,-3.8 10.3,-10.7 10.3,-18.5C51.9,16.7 43.2,8 32.5,8z" />
+    <!-- Top -->
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M25,35L40,35L40,50L25,50L25,35z" />
+</vector>
+
+

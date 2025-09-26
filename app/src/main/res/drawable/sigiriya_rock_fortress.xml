@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="414dp"
+    android:height="500dp"
+    android:viewportWidth="414"
+    android:viewportHeight="500">
+    
+    <!-- Sky background -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0 L414,0 L414,500 L0,500 Z" />
+    
+    <!-- Clouds -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,80 C70,60 90,60 110,80 C130,60 150,60 170,80 C190,60 210,60 230,80 C250,60 270,60 290,80 C310,60 330,60 350,80 C370,60 390,60 414,80 L414,120 L0,120 Z" />
+    
+    <!-- Ground -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M0,300 L414,300 L414,500 L0,500 Z" />
+    
+    <!-- Sigiriya Rock -->
+    <path
+        android:fillColor="#CD853F"
+        android:pathData="M150,200 L264,200 L264,300 L150,300 Z" />
+    
+    <!-- Rock base -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M140,300 L274,300 L274,320 L140,320 Z" />
+    
+    <!-- Rock top -->
+    <path
+        android:fillColor="#D2691E"
+        android:pathData="M160,180 L254,180 L254,200 L160,200 Z" />
+    
+    <!-- Rock plateau -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M170,160 L244,160 L244,180 L170,180 Z" />
+    
+    <!-- Water gardens -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M100,320 L200,320 L200,340 L100,340 Z" />
+    
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M220,320 L320,320 L320,340 L220,340 Z" />
+    
+    <!-- Trees -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M80,300 L100,300 L100,320 L80,320 Z" />
+    
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M320,300 L340,300 L340,320 L320,320 Z" />
+    
+    <!-- Text overlay -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,400 L414,400 L414,420 L0,420 Z" />
+</vector>
+
+

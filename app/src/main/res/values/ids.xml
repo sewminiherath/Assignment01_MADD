@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="searchCard" type="id">@+id/searchCard</item>
+    <item name="destinationsRecyclerView" type="id">@+id/destinationsRecyclerView</item>
+    <item name="destinationDescription" type="id">@+id/destinationDescription</item>
+</resources>

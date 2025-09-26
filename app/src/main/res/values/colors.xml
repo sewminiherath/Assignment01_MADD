@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="input_field_background">#E6F2F2F2</color>
+
+    <!-- Custom colors for the UI -->
+    <color name="dark_blue">#FF1A237E</color>
+    <color name="orange">#FFFF9800</color>
+    <color name="yellow">#FFFFEB3B</color>
+    <color name="light_gray">#FF9E9E9E</color>
+    <color name="blue">#FF2196F3</color>
+    <color name="yellow_ring">#FFFFEB3B</color>
+
+    <!-- Create Account specific colors -->
+    <color name="input_hint_color">#FF424242</color>
+    <color name="input_text_color">#FF212121</color>
+    <color name="gender_background">#FFF5F5F5</color>
+
+    <!-- Additional UI Colors -->
+    <color name="light_dark_blue">#FF2A2D3A</color>
+    <color name="red">#FFFF5252</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_hint">#FF757575</color>
+
+    <!-- Input Field Colors -->
+    <color name="input_background">#FF2A2D3A</color>
+    <color name="input_border">#FF3A3D4A</color>
+
+    <!-- Button Colors -->
+    <color name="button_primary">#FFFF9800</color>
+    <color name="button_secondary">#FF2A2D3A</color>
+    <color name="button_text">#FFFFFFFF</color>
+
+    <!-- Card and Background Colors -->
+    <color name="card_background">#FF2A2D3A</color>
+    <color name="surface_background">#FF1A237E</color>
+
+    <!-- Status Colors -->
+    <color name="success">#FF4CAF50</color>
+    <color name="error">#FFFF5252</color>
+    <color name="warning">#FFFF9800</color>
+    <color name="info">#FF2196F3</color>
+
+    <!-- Navigation Colors -->
+    <color name="nav_background">#FFFF9800</color>
+    <color name="nav_icon_active">#FFFFFFFF</color>
+    <color name="nav_icon_inactive">#FF9E9E9E</color>
+
+    <!-- Profile Colors -->
+    <color name="profile_circle_border">#FFFFFFFF</color>
+    <color name="profile_placeholder">#FF9E9E9E</color>
+
+    <!-- Indicator Colors -->
+    <color name="indicator_active">#FFFF9800</color>
+    <color name="indicator_inactive">#FF9E9E9E</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#FF1A237E</color>
+    <color name="gradient_end">#FF2A2D3A</color>
+
+    <!-- Overlay Colors -->
+    <color name="overlay_light">#80000000</color>
+    <color name="overlay_dark">#CC000000</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#80000000</color>
+
+    <!-- Sign In Page Colors -->
+    <color name="background_dark">#FF020C43</color>
+    <color name="input_background_light">#FFF2F2F2</color>
+    <color name="background_dark_blue">#FF020C43</color>
+
+    <!-- Profile Screen Colors -->
+    <color name="divider_color">#FFD9D9D9</color>
+    <color name="text_secondary">#FFA6A1A1</color>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="165dp"
+    android:height="207dp"
+    android:viewportWidth="165"
+    android:viewportHeight="207">
+    <!-- Sky -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0L165,0L165,50L0,50L0,0z" />
+    <!-- Ancient Ruins -->
+    <path
+        android:fillColor="#D2B48C"
+        android:pathData="M20,50L145,50L145,180L20,180L20,50z" />
+    <!-- Stone Steps -->
+    <path
+        android:fillColor="#CD853F"
+        android:pathData="M30,60L135,60L135,80L30,80L30,60z" />
+    <path
+        android:fillColor="#CD853F"
+        android:pathData="M35,80L130,80L130,100L35,100L35,80z" />
+    <path
+        android:fillColor="#CD853F"
+        android:pathData="M40,100L125,100L125,120L40,120L40,100z" />
+    <!-- Trees -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M10,40L25,20L40,40L10,40z" />
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M125,40L140,20L155,40L125,40z" />
+</vector>

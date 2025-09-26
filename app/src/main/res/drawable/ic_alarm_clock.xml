@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="27dp"
+    android:height="25dp"
+    android:viewportWidth="27"
+    android:viewportHeight="25">
+    <!-- Clock Face -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M13.5,2C7.2,2 2,7.2 2,13.5S7.2,25 13.5,25S25,19.8 25,13.5S19.8,2 13.5,2z" />
+    <!-- Clock Border -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/black"
+        android:strokeWidth="2"
+        android:pathData="M13.5,2C7.2,2 2,7.2 2,13.5S7.2,25 13.5,25S25,19.8 25,13.5S19.8,2 13.5,2z" />
+    <!-- Hour Hand -->
+    <path
+        android:fillColor="@color/black"
+        android:pathData="M13.5,13.5L13.5,8L13.5,13.5z" />
+    <!-- Minute Hand -->
+    <path
+        android:fillColor="@color/black"
+        android:pathData="M13.5,13.5L18,13.5L13.5,13.5z" />
+    <!-- Center Dot -->
+    <path
+        android:fillColor="@color/black"
+        android:pathData="M13.5,12.5m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0" />
+    <!-- Alarm Bells -->
+    <path
+        android:fillColor="@color/black"
+        android:pathData="M5,5L8,8L5,5z" />
+    <path
+        android:fillColor="@color/black"
+        android:pathData="M22,5L19,8L22,5z" />
+</vector>
+
+

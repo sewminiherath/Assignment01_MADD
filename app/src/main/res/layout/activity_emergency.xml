@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".EmergencyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark"
+        android:padding="0dp">
+
+        <!-- Status bar icons -->
+        <ImageView
+            android:id="@+id/status_icon_1"
+            android:layout_width="20dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_phone"
+            android:contentDescription="Status icon 1" />
+
+        <ImageView
+            android:id="@+id/status_icon_2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_notifications"
+            android:contentDescription="Status icon 2" />
+
+        <ImageView
+            android:id="@+id/status_icon_3"
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_compass"
+            android:contentDescription="Status icon 3" />
+
+        <!-- Time display -->
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="342dp"
+            android:layout_marginTop="7dp"
+            android:text="10:55"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Back button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="54dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Back button"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Emergency contacts title -->
+        <TextView
+            android:id="@+id/emergency_contacts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="121dp"
+            android:text="@string/your_emergency_contacts"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- First emergency contact -->
+        <ImageView
+            android:id="@+id/contact1_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="206dp"
+            android:src="@drawable/ic_person"
+            android:contentDescription="Contact 1 icon" />
+
+        <TextView
+            android:id="@+id/contact1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/add_emergency_contact"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/contact1_arrow"
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="367dp"
+            android:layout_marginTop="206dp"
+            android:src="@drawable/ic_chevron_down"
+            android:contentDescription="Contact 1 arrow"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Divider 1 -->
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="412dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="9.99dp"
+            android:layout_marginTop="240dp"
+            android:background="#E6D9D9D9" />
+
+        <!-- Second emergency contact -->
+        <ImageView
+            android:id="@+id/contact2_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="290dp"
+            android:src="@drawable/ic_person"
+            android:contentDescription="Contact 2 icon" />
+
+        <TextView
+            android:id="@+id/contact2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="290dp"
+            android:text="@string/add_emergency_contact"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/contact2_arrow"
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="367dp"
+            android:layout_marginTop="290dp"
+            android:src="@drawable/ic_chevron_down"
+            android:contentDescription="Contact 2 arrow"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Divider 2 -->
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="412dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="9.99dp"
+            android:layout_marginTop="324dp"
+            android:background="#E6D9D9D9" />
+
+        <!-- Emergency services title -->
+        <TextView
+            android:id="@+id/emergency_services_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="369dp"
+            android:text="@string/emergency_services"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Police card -->
+        <RelativeLayout
+            android:id="@+id/police_card"
+            android:layout_width="165dp"
+            android:layout_height="207dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="439dp"
+            android:background="@drawable/emergency_card_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/police_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="@string/police"
+                android:textColor="#FFA6A1A1"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/police_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="79dp"
+                android:contentDescription="Police icon"
+                android:src="@drawable/police" />
+
+            <TextView
+                android:id="@+id/police_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="142dp"
+                android:text="119"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- Fire card -->
+        <RelativeLayout
+            android:id="@+id/fire_card"
+            android:layout_width="165dp"
+            android:layout_height="207dp"
+            android:layout_marginStart="222dp"
+            android:layout_marginTop="439dp"
+            android:background="@drawable/emergency_card_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/fire_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="@string/fire"
+                android:textColor="#FFA6A1A1"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/fire_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="79dp"
+                android:contentDescription="Fire icon"
+                android:src="@drawable/fire" />
+
+            <TextView
+                android:id="@+id/fire_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="142dp"
+                android:text="110"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- Ambulance card -->
+        <RelativeLayout
+            android:id="@+id/ambulance_card"
+            android:layout_width="165dp"
+            android:layout_height="207dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="672dp"
+            android:background="@drawable/emergency_card_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/ambulance_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="@string/ambulance"
+                android:textColor="#FFA6A1A1"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/ambulance_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="79dp"
+                android:contentDescription="Ambulance icon"
+                android:src="@drawable/ambulance" />
+
+            <TextView
+                android:id="@+id/ambulance_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="134dp"
+                android:text="1990"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- Customer care card -->
+        <RelativeLayout
+            android:id="@+id/customer_care_card"
+            android:layout_width="165dp"
+            android:layout_height="207dp"
+            android:layout_marginStart="222dp"
+            android:layout_marginTop="672dp"
+            android:background="@drawable/emergency_card_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/ambulance_icon2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="79dp"
+                android:contentDescription="Ambulance icon"
+                android:src="@drawable/customercare" />
+
+            <TextView
+                android:id="@+id/customer_care_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="@string/customer_care"
+                android:textColor="#FFA6A1A1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/customer_care_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="134dp"
+                android:text="1331"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

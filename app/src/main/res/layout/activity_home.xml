@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarThumbVertical="@color/orange"
+    android:scrollbarTrackVertical="@color/background_dark"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark"
+        android:padding="0dp"
+        android:paddingBottom="80dp">
+
+
+        <!-- Profile image -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/profile_placeholder"
+            android:contentDescription="@string/profile_image" />
+
+        <!-- Greeting text -->
+        <TextView
+            android:id="@+id/greeting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_toStartOf="@+id/profile_image"
+            android:text="@string/greeting"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+        <!-- Location text -->
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/greeting_text"
+            android:layout_toStartOf="@+id/profile_image"
+            android:text="@string/location"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Search bar -->
+        <RelativeLayout
+            android:id="@+id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/location_text"
+            android:background="@drawable/rounded_input_background"
+            android:padding="0dp">
+
+            <!-- Search icon -->
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search"
+                android:contentDescription="@string/search_icon" />
+
+            <!-- Search placeholder text -->
+            <TextView
+                android:id="@+id/search_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="50dp"
+                android:layout_centerVertical="true"
+                android:text="@string/search_hint"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- Camera icon -->
+            <ImageView
+                android:id="@+id/camera_icon"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_camera"
+                android:contentDescription="@string/camera_icon" />
+
+        </RelativeLayout>
+
+        <!-- Navigation buttons container -->
+        <LinearLayout
+            android:id="@+id/nav_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/search_container"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:baselineAligned="false">
+
+            <!-- Planner button -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/nav_button_background"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/planner_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_planner"
+                    android:contentDescription="@string/planner_icon" />
+
+                <TextView
+                    android:id="@+id/planner_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/planner_icon"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/planner"
+                    android:textColor="@color/background_dark"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <!-- Explore button -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/nav_button_background"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/explore_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_compass"
+                    android:contentDescription="@string/explore_icon" />
+
+                <TextView
+                    android:id="@+id/explore_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/explore_icon"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/explore"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <!-- Itineraries button -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/nav_button_background"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/itineraries_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_itinerary"
+                    android:contentDescription="@string/itineraries_icon" />
+
+                <TextView
+                    android:id="@+id/itineraries_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/itineraries_icon"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/itineraries"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <!-- Emergency button -->
+            <RelativeLayout
+                android:id="@+id/emergency_button_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/emergency_button_pressed"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/emergency_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_emergency"
+                    android:contentDescription="@string/emergency_icon"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/emergency_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/emergency_icon"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/emergency"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- Recommended section header -->
+        <LinearLayout
+            android:id="@+id/recommended_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/nav_buttons_container"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/recommended_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/recommended"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_all_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <!-- Recommended destinations grid -->
+        <LinearLayout
+            android:id="@+id/destinations_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/recommended_header"
+            android:orientation="vertical">
+
+            <!-- First row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="207dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/destination_card_background">
+
+                    <ImageView
+                        android:id="@+id/destination1_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/destination_1"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ar" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="207dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/destination_card_background">
+
+                    <ImageView
+                        android:id="@+id/destination2_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/destination_2"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/anuradhapura" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Second row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="207dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/destination_card_background">
+
+                    <ImageView
+                        android:id="@+id/destination3_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/destination_3"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/nallur" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="207dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/destination_card_background">
+
+                    <ImageView
+                        android:id="@+id/destination4_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/destination_4"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/rawanana" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <!-- Bottom navigation bar -->
+            <LinearLayout
+                android:id="@+id/bottom_nav_bar"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bottom_nav_background"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="4"
+                android:baselineAligned="false">
+
+            <!-- Location icon -->
+            <ImageView
+                android:id="@+id/nav_location_icon"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_location_pin"
+                android:contentDescription="@string/location_icon"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Home icon -->
+            <ImageView
+                android:id="@+id/nav_home_icon"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_home"
+                android:contentDescription="@string/home_icon"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Notifications icon -->
+            <ImageView
+                android:id="@+id/nav_notifications_icon"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_bell"
+                android:contentDescription="@string/notifications_icon"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Profile icon -->
+            <ImageView
+                android:id="@+id/nav_profile_icon"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_person"
+                android:contentDescription="@string/profile_icon"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

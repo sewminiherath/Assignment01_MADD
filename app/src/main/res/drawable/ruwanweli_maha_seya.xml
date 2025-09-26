@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="59dp"
+    android:height="81dp"
+    android:viewportWidth="59"
+    android:viewportHeight="81">
+    <!-- Sky -->
+    <path
+        android:fillColor="#E6E6FA"
+        android:pathData="M0,0L59,0L59,20L0,20L0,0z" />
+    <!-- Stupa -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,20L39,20L39,60L20,60L20,20z" />
+    <!-- Dome -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M15,60L44,60L44,70L15,70L15,60z" />
+    <!-- Base -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M10,70L49,70L49,81L10,81L10,70z" />
+</vector>
+
+

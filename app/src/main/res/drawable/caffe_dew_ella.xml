@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="149dp"
+    android:height="100dp"
+    android:viewportWidth="149"
+    android:viewportHeight="100">
+    
+    <!-- Cafe interior background -->
+    <path
+        android:fillColor="#F8F9FA"
+        android:pathData="M0,0 L149,0 L149,100 L0,100 Z" />
+    
+    <!-- Wall with colorful art -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0 L149,0 L149,100 L0,100 Z" />
+    
+    <!-- Colorful wall decorations -->
+    <path
+        android:fillColor="#FF6B6B"
+        android:pathData="M20,20 L40,20 L40,40 L20,40 Z" />
+    
+    <path
+        android:fillColor="#4ECDC4"
+        android:pathData="M50,20 L70,20 L70,40 L50,40 Z" />
+    
+    <path
+        android:fillColor="#45B7D1"
+        android:pathData="M80,20 L100,20 L100,40 L80,40 Z" />
+    
+    <path
+        android:fillColor="#96CEB4"
+        android:pathData="M110,20 L130,20 L130,40 L110,40 Z" />
+    
+    <!-- Buffet table -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M20,50 L129,50 L129,70 L20,70 Z" />
+    
+    <!-- Food plates on buffet -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,55 L40,55 L40,65 L30,65 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,55 L60,55 L60,65 L50,65 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,55 L80,55 L80,65 L70,65 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M90,55 L100,55 L100,65 L90,65 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,55 L120,55 L120,65 L110,65 Z" />
+    
+    <!-- Food items -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M32,57 L38,57 L38,63 L32,63 Z" />
+    
+    <path
+        android:fillColor="#FF6347"
+        android:pathData="M52,57 L58,57 L58,63 L52,63 Z" />
+    
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M72,57 L78,57 L78,63 L72,63 Z" />
+    
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M92,57 L98,57 L98,63 L92,63 Z" />
+    
+    <path
+        android:fillColor="#FF69B4"
+        android:pathData="M112,57 L118,57 L118,63 L112,63 Z" />
+    
+    <!-- Modern cafe lighting -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M40,30 L50,30 L50,40 L40,40 Z" />
+    
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M70,30 L80,30 L80,40 L70,40 Z" />
+    
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M100,30 L110,30 L110,40 L100,40 Z" />
+    
+    <!-- Text placeholder -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,85 L149,85 L149,100 L0,100 Z" />
+</vector>
+
+

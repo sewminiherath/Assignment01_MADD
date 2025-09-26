@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark"
+        android:padding="0dp">
+
+<!--        &lt;!&ndash; Status bar icons &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:id="@+id/status_icon_1"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="19dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:contentDescription="Status icon 1"-->
+<!--            android:src="@drawable/ic_phone" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/status_icon_2"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:contentDescription="Status icon 2"-->
+<!--            android:src="@drawable/ic_notifications" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/status_icon_3"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="17dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_toEndOf="@+id/status_icon_1"-->
+<!--            android:contentDescription="Status icon 3"-->
+<!--            android:src="@drawable/ic_compass" />-->
+
+<!--        &lt;!&ndash; Time display &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/time_text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="10:55"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="10sp"-->
+<!--            android:textStyle="bold" />-->
+
+        <!-- Welcome text -->
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="Welcome!"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <!-- Smart Travel text -->
+        <TextView
+            android:id="@+id/travel_wise_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/welcome_text"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Smart Travel"
+            android:textColor="#FFAC00"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- Sign in subtitle -->
+        <TextView
+            android:id="@+id/signin_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/travel_wise_text"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Sign in to your account"
+            android:textColor="#B1B1B1"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Email input field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/signin_subtitle"
+            android:layout_marginTop="40dp"
+            app:boxBackgroundColor="@color/input_background_light"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            app:boxStrokeWidth="0dp"
+            app:hintTextColor="@color/input_hint_color"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/input_hint_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColor="@color/input_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password input field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/email_input_layout"
+            android:layout_marginTop="16dp"
+            app:boxBackgroundColor="@color/input_background_light"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            app:boxStrokeWidth="0dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/input_hint_color"
+            app:hintTextColor="@color/input_hint_color"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconTint="@color/input_hint_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="@color/input_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Forgot password link -->
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/password_input_layout"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Forgot Password?"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Sign In button -->
+        <RelativeLayout
+            android:id="@+id/signin_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/forgot_password"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/signin_button_background"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/signin_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Sign In"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- Sign up text -->
+        <TextView
+            android:id="@+id/no_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/signin_button"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="You have no account?"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Sign up button -->
+        <Button
+            android:id="@+id/signup_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/no_account_text"
+            android:layout_marginTop="8dp"
+            android:text="Sign up now"
+            android:textColor="#016BFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:minWidth="120dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

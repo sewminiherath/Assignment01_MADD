@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="414dp"
+    android:height="500dp"
+    android:viewportWidth="414"
+    android:viewportHeight="500">
+    
+    <!-- Sky background -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0 L414,0 L414,500 L0,500 Z" />
+    
+    <!-- Clouds -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,80 C70,60 90,60 110,80 C130,60 150,60 170,80 C190,60 210,60 230,80 C250,60 270,60 290,80 C310,60 330,60 350,80 C370,60 390,60 414,80 L414,120 L0,120 Z" />
+    
+    <!-- Ground -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M0,300 L414,300 L414,500 L0,500 Z" />
+    
+    <!-- Yapahuwa Rock Fortress -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M150,200 L264,200 L264,300 L150,300 Z" />
+    
+    <!-- Rock base -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M140,300 L274,300 L274,320 L140,320 Z" />
+    
+    <!-- Ancient stone steps -->
+    <path
+        android:fillColor="#696969"
+        android:pathData="M160,250 L254,250 L254,300 L160,300 Z" />
+    
+    <!-- Stone lion guardians -->
+    <path
+        android:fillColor="#D2691E"
+        android:pathData="M160,280 L180,280 L180,300 L160,300 Z" />
+    
+    <path
+        android:fillColor="#D2691E"
+        android:pathData="M234,280 L254,280 L254,300 L234,300 Z" />
+    
+    <!-- Stone archways -->
+    <path
+        android:fillColor="#696969"
+        android:pathData="M190,200 L224,200 L224,250 L190,250 Z" />
+    
+    <!-- Foliage on rock -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M170,180 L244,180 L244,200 L170,200 Z" />
+    
+    <!-- Trees around fortress -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M100,200 L140,200 L140,300 L100,300 Z" />
+    
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M274,200 L314,200 L314,300 L274,300 Z" />
+    
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M50,250 L100,250 L100,350 L50,350 Z" />
+    
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M314,250 L364,250 L364,350 L314,350 Z" />
+    
+    <!-- Stone structures -->
+    <path
+        android:fillColor="#696969"
+        android:pathData="M180,220 L194,220 L194,240 L180,240 Z" />
+    
+    <path
+        android:fillColor="#696969"
+        android:pathData="M220,220 L234,220 L234,240 L220,240 Z" />
+    
+    <!-- Text overlay -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,400 L414,400 L414,420 L0,420 Z" />
+</vector>
+
+

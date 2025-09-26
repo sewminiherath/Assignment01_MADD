@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="149dp"
+    android:height="100dp"
+    android:viewportWidth="149"
+    android:viewportHeight="100">
+    
+    <!-- Restaurant background -->
+    <path
+        android:fillColor="#2C3E50"
+        android:pathData="M0,0 L149,0 L149,100 L0,100 Z" />
+    
+    <!-- Restaurant building -->
+    <path
+        android:fillColor="#34495E"
+        android:pathData="M20,40 L129,40 L129,80 L20,80 Z" />
+    
+    <!-- Windows with warm light -->
+    <path
+        android:fillColor="#F39C12"
+        android:pathData="M30,50 L40,50 L40,60 L30,60 Z" />
+    
+    <path
+        android:fillColor="#F39C12"
+        android:pathData="M50,50 L60,50 L60,60 L50,60 Z" />
+    
+    <path
+        android:fillColor="#F39C12"
+        android:pathData="M70,50 L80,50 L80,60 L70,60 Z" />
+    
+    <path
+        android:fillColor="#F39C12"
+        android:pathData="M90,50 L100,50 L100,60 L90,60 Z" />
+    
+    <path
+        android:fillColor="#F39C12"
+        android:pathData="M110,50 L120,50 L120,60 L110,60 Z" />
+    
+    <!-- Restaurant sign -->
+    <path
+        android:fillColor="#E74C3C"
+        android:pathData="M40,30 L109,30 L109,40 L40,40 Z" />
+    
+    <!-- Door -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M65,60 L75,60 L75,80 L65,80 Z" />
+    
+    <!-- Text placeholder -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,85 L149,85 L149,100 L0,100 Z" />
+</vector>
+
+

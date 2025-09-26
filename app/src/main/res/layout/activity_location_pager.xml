@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".LocationPagerActivity">
+
+    <!-- Status Bar Icons -->
+    <!-- Signal and WiFi Icons (Left side) -->
+    <ImageView
+        android:id="@+id/signalIcon"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_signal"
+        app:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wifiIcon"
+        android:layout_width="20dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_wifi"
+        app:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Battery and Time (Right side) -->
+    <ImageView
+        android:id="@+id/batteryIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_battery"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="7dp"
+        android:text="10:55"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/batteryIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ViewPager for Location Cards -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/locationViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/dotIndicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <!-- Dot Indicator -->
+    <LinearLayout
+        android:id="@+id/dotIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Dots will be added programmatically -->
+    </LinearLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bottom_navigation_background"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Location Pin Icon -->
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_location_pin"
+            android:tint="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <!-- Home Icon -->
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:tint="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <!-- Bell Icon -->
+        <ImageView
+            android:id="@+id/notificationsIcon"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_bell"
+            android:tint="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile"
+            android:tint="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

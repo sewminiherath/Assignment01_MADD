@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="59dp"
+    android:height="81dp"
+    android:viewportWidth="59"
+    android:viewportHeight="81">
+    <!-- Sky -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0L59,0L59,20L0,20L0,0z" />
+    <!-- Tree -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M25,20L34,20L34,60L25,60L25,20z" />
+    <!-- Tree Crown -->
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M20,20L39,20L39,40L20,40L20,20z" />
+    <!-- Fence -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M10,60L49,60L49,65L10,65L10,60z" />
+    <!-- Flags -->
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M15,40L20,40L20,50L15,50L15,40z" />
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M25,40L30,40L30,50L25,50L25,40z" />
+    <path
+        android:fillColor="#FF0000"
+        android:pathData="M35,40L40,40L40,50L35,50L35,40z" />
+</vector>
+
+

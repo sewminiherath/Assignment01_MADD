@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="149dp"
+    android:height="100dp"
+    android:viewportWidth="149"
+    android:viewportHeight="100">
+    
+    <!-- Outdoor background -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0 L149,0 L149,100 L0,100 Z" />
+    
+    <!-- Restaurant building -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M20,40 L129,40 L129,80 L20,80 Z" />
+    
+    <!-- Thatched roof -->
+    <path
+        android:fillColor="#D2691E"
+        android:pathData="M15,30 L134,30 L134,40 L15,40 Z" />
+    
+    <!-- Wooden pillars -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M25,40 L35,40 L35,80 L25,80 Z" />
+    
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M45,40 L55,40 L55,80 L45,80 Z" />
+    
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M65,40 L75,40 L75,80 L65,80 Z" />
+    
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M85,40 L95,40 L95,80 L85,80 Z" />
+    
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M105,40 L115,40 L115,80 L105,80 Z" />
+    
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M125,40 L135,40 L135,80 L125,80 Z" />
+    
+    <!-- Stone walls -->
+    <path
+        android:fillColor="#696969"
+        android:pathData="M30,50 L50,50 L50,70 L30,70 Z" />
+    
+    <path
+        android:fillColor="#696969"
+        android:pathData="M60,50 L80,50 L80,70 L60,70 Z" />
+    
+    <path
+        android:fillColor="#696969"
+        android:pathData="M90,50 L110,50 L110,70 L90,70 Z" />
+    
+    <path
+        android:fillColor="#696969"
+        android:pathData="M120,50 L140,50 L140,70 L120,70 Z" />
+    
+    <!-- Outdoor tables -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M30,60 L50,60 L50,80 L30,80 Z" />
+    
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M60,60 L80,60 L80,80 L60,80 Z" />
+    
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M90,60 L110,60 L110,80 L90,80 Z" />
+    
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M120,60 L140,60 L140,80 L120,80 Z" />
+    
+    <!-- Text placeholder -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,85 L149,85 L149,100 L0,100 Z" />
+</vector>
+
+

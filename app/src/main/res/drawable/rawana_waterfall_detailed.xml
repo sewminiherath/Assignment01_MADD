@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="300dp"
+    android:viewportWidth="400"
+    android:viewportHeight="300">
+    
+    <!-- Sky background -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0 L400,0 L400,100 L0,100 Z"/>
+    
+    <!-- Mountain background -->
+    <path
+        android:fillColor="#8B7355"
+        android:pathData="M0,100 L400,100 L400,200 L0,200 Z"/>
+    
+    <!-- Waterfall -->
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M180,100 L220,100 L220,250 L180,250 Z"/>
+    
+    <!-- Waterfall stream -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M185,100 L185,250 L195,250 L195,100 Z"/>
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M205,100 L205,250 L215,250 L215,100 Z"/>
+    
+    <!-- Water pool at bottom -->
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M150,250 L250,250 L250,280 L150,280 Z"/>
+    
+    <!-- Rocks around waterfall -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M160,200 L180,200 L180,220 L160,220 Z"/>
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M220,200 L240,200 L240,220 L220,220 Z"/>
+    
+    <!-- Ground -->
+    <path
+        android:fillColor="#90EE90"
+        android:pathData="M0,280 L400,280 L400,300 L0,300 Z"/>
+    
+    <!-- Trees -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M50,200 Q50,180 50,160 Q70,170 50,180 Q30,170 50,160 Q50,180 50,200 Z"/>
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M350,200 Q350,180 350,160 Q370,170 350,180 Q330,170 350,160 Q350,180 350,200 Z"/>
+    
+    <!-- Water mist -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M175,120 Q175,110 175,100 Q185,105 175,110 Q165,105 175,100 Q175,110 175,120 Z"/>
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M200,130 Q200,120 200,110 Q210,115 200,120 Q190,115 200,110 Q200,120 200,130 Z"/>
+</vector>
+
+

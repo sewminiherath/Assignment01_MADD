@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="149dp"
+    android:height="100dp"
+    android:viewportWidth="149"
+    android:viewportHeight="100">
+    
+    <!-- Night sky background -->
+    <path
+        android:fillColor="#191970"
+        android:pathData="M0,0 L149,0 L149,100 L0,100 Z" />
+    
+    <!-- Tent structure -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,40 L129,40 L129,80 L20,80 Z" />
+    
+    <!-- Tent roof -->
+    <path
+        android:fillColor="#F0F8FF"
+        android:pathData="M30,30 L119,30 L119,40 L30,40 Z" />
+    
+    <!-- Blue string lights -->
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M25,35 L35,35 L35,45 L25,45 Z" />
+    
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M45,35 L55,35 L55,45 L45,45 Z" />
+    
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M65,35 L75,35 L75,45 L65,45 Z" />
+    
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M85,35 L95,35 L95,45 L85,45 Z" />
+    
+    <path
+        android:fillColor="#4169E1"
+        android:pathData="M105,35 L115,35 L115,45 L105,45 Z" />
+    
+    <!-- Outdoor tables -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M30,60 L50,60 L50,80 L30,80 Z" />
+    
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M70,60 L90,60 L90,80 L70,80 Z" />
+    
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M110,60 L130,60 L130,80 L110,80 Z" />
+    
+    <!-- Text placeholder -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,85 L149,85 L149,100 L0,100 Z" />
+</vector>
+
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="414dp"
+    android:height="500dp"
+    android:viewportWidth="414"
+    android:viewportHeight="500">
+    
+    <!-- Sky background -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0 L414,0 L414,500 L0,500 Z" />
+    
+    <!-- Clouds -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,80 C70,60 90,60 110,80 C130,60 150,60 170,80 C190,60 210,60 230,80 C250,60 270,60 290,80 C310,60 330,60 350,80 C370,60 390,60 414,80 L414,120 L0,120 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M100,120 C120,100 140,100 160,120 C180,100 200,100 220,120 C240,100 260,100 280,120 C300,100 320,100 340,120 C360,100 380,100 414,120 L414,160 L0,160 Z" />
+    
+    <!-- Ground -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M0,300 L414,300 L414,500 L0,500 Z" />
+    
+    <!-- Stupa/Dome -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M180,200 C180,180 200,160 220,160 C240,160 260,180 260,200 C260,220 240,240 220,240 C200,240 180,220 180,200 Z" />
+    
+    <!-- Stupa Spire -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M220,160 L220,120 L230,120 L230,160 Z" />
+    
+    <!-- Water lilies -->
+    <path
+        android:fillColor="#FF69B4"
+        android:pathData="M150,280 C160,270 170,270 180,280 C190,270 200,270 210,280 C220,270 230,270 240,280 C250,270 260,270 270,280 C280,270 290,270 300,280 C310,270 320,270 330,280 C340,270 350,270 360,280 C370,270 380,270 390,280 C400,270 410,270 420,280 L420,300 L150,300 Z" />
+    
+    <!-- Buildings in background -->
+    <path
+        android:fillColor="#D3D3D3"
+        android:pathData="M300,200 L350,200 L350,280 L300,280 Z" />
+    
+    <path
+        android:fillColor="#D3D3D3"
+        android:pathData="M50,220 L100,220 L100,300 L50,300 Z" />
+    
+    <!-- Text overlay for placeholder -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,400 L414,400 L414,420 L0,420 Z" />
+</vector>
+
+

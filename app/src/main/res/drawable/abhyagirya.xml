@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="59dp"
+    android:height="81dp"
+    android:viewportWidth="59"
+    android:viewportHeight="81">
+    <!-- Sky -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0L59,0L59,20L0,20L0,0z" />
+    <!-- Monastery -->
+    <path
+        android:fillColor="#D2B48C"
+        android:pathData="M15,20L44,20L44,60L15,60L15,20z" />
+    <!-- Roof -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M10,20L49,20L49,30L10,30L10,20z" />
+    <!-- Base -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M10,60L49,60L49,81L10,81L10,60z" />
+    <!-- Windows -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M20,35L25,35L25,45L20,45L20,35z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M34,35L39,35L39,45L34,45L34,35z" />
+</vector>
+
+

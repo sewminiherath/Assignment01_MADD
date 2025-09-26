@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="165dp"
+    android:height="207dp"
+    android:viewportWidth="165"
+    android:viewportHeight="207">
+    <!-- Forest Background -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M0,0L165,0L165,207L0,207L0,0z" />
+    <!-- Stream -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M20,100L145,100L145,150L20,150L20,100z" />
+    <!-- Rocks in Stream -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M40,120L60,100L80,120L40,120z" />
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M90,130L110,110L130,130L90,130z" />
+    <!-- Trees -->
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M10,80L25,60L40,80L10,80z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M125,70L140,50L155,70L125,70z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M30,60L45,40L60,60L30,60z" />
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M105,60L120,40L135,60L105,60z" />
+</vector>
+
+

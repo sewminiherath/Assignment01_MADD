@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="165dp"
+    android:height="207dp"
+    android:viewportWidth="165"
+    android:viewportHeight="207">
+    <!-- Lighthouse Tower -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M82.5,20L82.5,180L75,180L75,20L82.5,20z" />
+    <!-- Lighthouse Base -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M60,180L105,180L105,200L60,200L60,180z" />
+    <!-- Light -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M78.75,7m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+    <!-- Palm Trees -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M30,150L35,120L40,150L30,150z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M130,160L135,130L140,160L130,160z" />
+    <!-- Ocean -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M0,200L165,200L165,207L0,207L0,200z" />
+</vector>

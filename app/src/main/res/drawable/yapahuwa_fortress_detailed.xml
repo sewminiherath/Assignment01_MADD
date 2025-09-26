@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="300dp"
+    android:viewportWidth="400"
+    android:viewportHeight="300">
+    
+    <!-- Sky background -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M0,0 L400,0 L400,100 L0,100 Z"/>
+    
+    <!-- Yapahuwa Rock -->
+    <path
+        android:fillColor="#8B7355"
+        android:pathData="M100,100 L300,100 L300,250 L100,250 Z"/>
+    
+    <!-- Rock texture -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M110,120 L290,120 L290,140 L110,140 Z"/>
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M120,160 L280,160 L280,180 L120,180 Z"/>
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M130,200 L270,200 L270,220 L130,220 Z"/>
+    
+    <!-- Ancient fortress walls -->
+    <path
+        android:fillColor="#DAA520"
+        android:pathData="M150,80 L250,80 L250,120 L150,120 Z"/>
+    
+    <!-- Fortress entrance -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M180,100 L220,100 L220,120 L180,120 Z"/>
+    
+    <!-- Fortress towers -->
+    <path
+        android:fillColor="#CD853F"
+        android:pathData="M160,80 L160,100 L170,100 L170,80 Z"/>
+    <path
+        android:fillColor="#CD853F"
+        android:pathData="M230,80 L230,100 L240,100 L240,80 Z"/>
+    
+    <!-- Ancient steps -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M120,250 L280,250 L280,260 L120,260 Z"/>
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M130,260 L270,260 L270,270 L130,270 Z"/>
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M140,270 L260,270 L260,280 L140,280 Z"/>
+    
+    <!-- Ground -->
+    <path
+        android:fillColor="#90EE90"
+        android:pathData="M0,280 L400,280 L400,300 L0,300 Z"/>
+    
+    <!-- Trees around fortress -->
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M50,200 Q50,180 50,160 Q70,170 50,180 Q30,170 50,160 Q50,180 50,200 Z"/>
+    <path
+        android:fillColor="#228B22"
+        android:pathData="M350,200 Q350,180 350,160 Q370,170 350,180 Q330,170 350,160 Q350,180 350,200 Z"/>
+    
+    <!-- Ancient ruins -->
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M20,250 L40,250 L40,270 L20,270 Z"/>
+    <path
+        android:fillColor="#A0522D"
+        android:pathData="M360,250 L380,250 L380,270 L360,270 Z"/>
+</vector>
+
+

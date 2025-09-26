@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Blue Circle Background -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M54,54m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+
+    <!-- TRAVEL-WISE Text (Orange) -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M15,40 L93,40 L93,50 L15,50 Z" />
+    
+    <!-- SMART TRAVEL, SMART PLAN Text (Light Gray) -->
+    <path
+        android:fillColor="#E5E7EB"
+        android:pathData="M20,60 L88,60 L88,68 L20,68 Z" />
+
+    <!-- Decorative elements -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M48,25 L60,25 L60,30 L48,30 Z" />
+    
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M48,78 L60,78 L60,83 L48,83 Z" />
+
+</vector>

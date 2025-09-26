@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="20dp"
+            android:gravity="center_vertical">
+
+            <!-- Back Arrow -->
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back_arrow"
+                android:alpha="0.5"
+                android:rotation="-90" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- My Trip Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Trip"
+                android:textColor="@android:color/white"
+                android:alpha="0.5"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05th September,2025"
+                android:textColor="@android:color/white"
+                android:alpha="0.5"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <!-- Calendar Icon -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_calendar"
+                android:alpha="0.5"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Duration Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="20dp"
+            android:gravity="center_vertical">
+
+            <!-- 1 Day -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Day"
+                android:textColor="@android:color/white"
+                android:alpha="0.5"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Duration Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textColor="@color/light_gray"
+                android:alpha="0.5"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+        <!-- Day Selector -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/day_selector_background"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp">
+
+            <!-- Day 01 Text -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Day 01"
+                android:textColor="@color/black"
+                android:alpha="0.5"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Dropdown Icon -->
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@drawable/ic_dropdown"
+                android:alpha="0.5" />
+
+        </LinearLayout>
+
+        <!-- Timeline Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="20dp">
+
+            <!-- Timeline Item 1: Ruwanweli Maha Seya -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <!-- Timeline Dot -->
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/timeline_dot"
+                    android:layout_marginTop="5dp" />
+
+                <!-- Timeline Content -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+
+                    <!-- Location Name -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruwanweli Maha Seya"
+                        android:textColor="@color/black"
+                        android:alpha="0.5"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <!-- Time -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="05:30am"
+                        android:textColor="@color/black"
+                        android:alpha="0.5"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+
+                    <!-- Image -->
+                    <ImageView
+                        android:layout_width="59dp"
+                        android:layout_height="81dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/image_border"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mhaseya" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Timeline Line -->
+            <View
+                android:layout_width="2dp"
+                android:layout_height="30dp"
+                android:background="@color/black"
+                android:alpha="0.5"
+                android:layout_marginStart="37dp" />
+
+            <!-- Timeline Item 2: Jaya Sri Maha Bodhiya -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <!-- Timeline Dot -->
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/timeline_dot"
+                    android:layout_marginTop="5dp" />
+
+                <!-- Timeline Content -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+
+                    <!-- Location Name -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jaya Sri Maha Bodhiya"
+                        android:textColor="@color/black"
+                        android:alpha="0.5"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <!-- Time -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06:30am"
+                        android:textColor="@color/black"
+                        android:alpha="0.5"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+
+                    <!-- Image -->
+                    <ImageView
+                        android:layout_width="59dp"
+                        android:layout_height="81dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/image_border"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/srimahabodhiya" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Timeline Line -->
+            <View
+                android:layout_width="2dp"
+                android:layout_height="30dp"
+                android:background="@color/black"
+                android:alpha="0.5"
+                android:layout_marginStart="37dp" />
+
+            <!-- Timeline Item 3: Thuparamaya -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <!-- Timeline Dot -->
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/timeline_dot"
+                    android:layout_marginTop="5dp" />
+
+                <!-- Timeline Content -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+
+                    <!-- Location Name -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thuparamaya"
+                        android:textColor="@color/black"
+                        android:alpha="0.5"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <!-- Time -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07:30pm"
+                        android:textColor="@color/black"
+                        android:alpha="0.5"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+
+                    <!-- Image -->
+                    <ImageView
+                        android:layout_width="59dp"
+                        android:layout_height="81dp"
+                        android:src="@drawable/thuparamaya"
+                        android:alpha="0.5"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/image_border"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Timeline Line -->
+            <View
+                android:layout_width="2dp"
+                android:layout_height="30dp"
+                android:background="@color/black"
+                android:alpha="0.5"
+                android:layout_marginStart="37dp" />
+
+            <!-- Timeline Item 4: Abhyagirya -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <!-- Timeline Dot -->
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/timeline_dot"
+                    android:layout_marginTop="5dp" />
+
+                <!-- Timeline Content -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+
+                    <!-- Location Name -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Abhyagirya"
+                        android:textColor="@color/black"
+                        android:alpha="0.5"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <!-- Time -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08:30pm"
+                        android:textColor="@color/black"
+                        android:alpha="0.5"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+
+                    <!-- Image -->
+                    <ImageView
+                        android:layout_width="59dp"
+                        android:layout_height="81dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/image_border"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/abhayagiriya" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Dark Blue Footer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/footer_background"
+            android:layout_marginTop="20dp"
+            android:padding="20dp">
+
+            <!-- Social Media Icons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <!-- Facebook -->
+                <LinearLayout
+                    android:id="@+id/facebook_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/facebook_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fb" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FaceBook"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+                <!-- WhatsApp -->
+                <LinearLayout
+                    android:id="@+id/whatsapp_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/whatsapp_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/whatssapp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WhatssApp"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+                <!-- Instagram -->
+                <LinearLayout
+                    android:id="@+id/instagram_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/instagram_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/insta" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Instagram"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+                <!-- LinkedIn -->
+                <LinearLayout
+                    android:id="@+id/linkedin_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/linkedin_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/linkden" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Linkedin"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Share Link Field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/share_link_background"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Link Text -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ffffgfgdfgghhnhgnjm,./.,mnhgbvcx"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <!-- Copy Icon -->
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_copy" />
+
+            </LinearLayout>
+
+            <!-- Profile Avatars -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <!-- Avatar 1 -->
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="63dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p1" />
+
+                <!-- Avatar 2 -->
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="63dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p3" />
+
+                <!-- Avatar 3 -->
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="63dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p2" />
+
+                <!-- Avatar 4 -->
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="63dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p4" />
+
+            </LinearLayout>
+
+            <!-- Share Plan Button -->
+            <LinearLayout
+                android:id="@+id/share_plan_button"
+                android:layout_width="165dp"
+                android:layout_height="43dp"
+                android:background="@drawable/share_plan_button"
+                android:backgroundTint="@color/orange"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share Plan"
+                    android:textColor="@color/black"
+                    android:alpha="0.5"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
