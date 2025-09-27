@@ -13,47 +13,47 @@
         android:background="@color/background_dark"
         android:padding="0dp">
 
-        <!-- Status bar icons -->
-        <ImageView
-            android:id="@+id/status_icon_1"
-            android:layout_width="20dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/ic_phone"
-            android:contentDescription="Status icon 1" />
+<!--        &lt;!&ndash; Status bar icons &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:id="@+id/status_icon_1"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="19dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:src="@drawable/ic_phone"-->
+<!--            android:contentDescription="Status icon 1" />-->
 
-        <ImageView
-            android:id="@+id/status_icon_2"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="3dp"
-            android:src="@drawable/ic_notifications"
-            android:contentDescription="Status icon 2" />
+<!--        <ImageView-->
+<!--            android:id="@+id/status_icon_2"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginTop="3dp"-->
+<!--            android:src="@drawable/ic_notifications"-->
+<!--            android:contentDescription="Status icon 2" />-->
 
-        <ImageView
-            android:id="@+id/status_icon_3"
-            android:layout_width="20dp"
-            android:layout_height="17dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/ic_compass"
-            android:contentDescription="Status icon 3" />
+<!--        <ImageView-->
+<!--            android:id="@+id/status_icon_3"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="17dp"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:src="@drawable/ic_compass"-->
+<!--            android:contentDescription="Status icon 3" />-->
 
-        <!-- Time display -->
-        <TextView
-            android:id="@+id/time_text"
-            android:layout_width="49dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="342dp"
-            android:layout_marginTop="7dp"
-            android:text="10:55"
-            android:textColor="@android:color/white"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            android:gravity="center" />
+<!--        &lt;!&ndash; Time display &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/time_text"-->
+<!--            android:layout_width="49dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="342dp"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:text="10:55"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="10sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:gravity="center" />-->
 
         <!-- Back button -->
         <ImageView
@@ -73,91 +73,177 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="121dp"
+            android:layout_marginTop="80dp"
             android:text="@string/your_emergency_contacts"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
-        <!-- First emergency contact -->
-        <ImageView
-            android:id="@+id/contact1_icon"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="206dp"
-            android:src="@drawable/ic_person"
-            android:contentDescription="Contact 1 icon" />
-
-        <TextView
-            android:id="@+id/contact1_text"
-            android:layout_width="wrap_content"
+        <!-- First emergency contact input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emergency_contact1_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="58dp"
-            android:layout_marginTop="206dp"
-            android:text="@string/add_emergency_contact"
-            android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/emergency_contacts_title"
+            android:hint="@string/emergency_contact_1"
+            app:hintTextColor="@android:color/white"
+            app:boxStrokeColor="@android:color/white"
+            app:boxBackgroundColor="@color/background_dark"
+            app:boxCornerRadiusTopStart="6dp"
+            app:boxCornerRadiusTopEnd="6dp"
+            app:boxCornerRadiusBottomStart="6dp"
+            app:boxCornerRadiusBottomEnd="6dp"
+            app:boxStrokeWidth="1dp"
+            app:startIconDrawable="@drawable/ic_person"
+            app:startIconTint="@android:color/white"
+            app:boxCollapsedPaddingTop="8dp"
+            app:boxStrokeWidthFocused="2dp">
 
-        <ImageView
-            android:id="@+id/contact1_arrow"
-            android:layout_width="30dp"
-            android:layout_height="27dp"
-            android:layout_marginStart="367dp"
-            android:layout_marginTop="206dp"
-            android:src="@drawable/ic_chevron_down"
-            android:contentDescription="Contact 1 arrow"
-            android:clickable="true"
-            android:focusable="true" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emergency_contact1_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
 
-        <!-- Divider 1 -->
-        <View
-            android:id="@+id/divider1"
-            android:layout_width="412dp"
-            android:layout_height="1dp"
-            android:layout_marginStart="9.99dp"
-            android:layout_marginTop="240dp"
-            android:background="#E6D9D9D9" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Second emergency contact -->
-        <ImageView
-            android:id="@+id/contact2_icon"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="290dp"
-            android:src="@drawable/ic_person"
-            android:contentDescription="Contact 2 icon" />
-
-        <TextView
-            android:id="@+id/contact2_text"
-            android:layout_width="wrap_content"
+        <!-- Emergency Contact 1 Phone Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emergency_phone1_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="58dp"
-            android:layout_marginTop="290dp"
-            android:text="@string/add_emergency_contact"
-            android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/emergency_contact1_layout"
+            android:hint="@string/emergency_contact_1_phone"
+            app:hintTextColor="@android:color/white"
+            app:boxStrokeColor="@android:color/white"
+            app:boxBackgroundColor="@color/background_dark"
+            app:boxCornerRadiusTopStart="6dp"
+            app:boxCornerRadiusTopEnd="6dp"
+            app:boxCornerRadiusBottomStart="6dp"
+            app:boxCornerRadiusBottomEnd="6dp"
+            app:boxStrokeWidth="1dp"
+            app:startIconDrawable="@android:drawable/stat_sys_phone_call"
+            app:startIconTint="@android:color/white"
+            app:boxCollapsedPaddingTop="8dp"
+            app:boxStrokeWidthFocused="2dp">
 
-        <ImageView
-            android:id="@+id/contact2_arrow"
-            android:layout_width="30dp"
-            android:layout_height="27dp"
-            android:layout_marginStart="367dp"
-            android:layout_marginTop="290dp"
-            android:src="@drawable/ic_chevron_down"
-            android:contentDescription="Contact 2 arrow"
-            android:clickable="true"
-            android:focusable="true" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emergency_phone1_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
 
-        <!-- Divider 2 -->
-        <View
-            android:id="@+id/divider2"
-            android:layout_width="412dp"
-            android:layout_height="1dp"
-            android:layout_marginStart="9.99dp"
-            android:layout_marginTop="324dp"
-            android:background="#E6D9D9D9" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Second emergency contact input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emergency_contact2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/emergency_phone1_layout"
+            android:hint="@string/emergency_contact_2"
+            app:hintTextColor="@android:color/white"
+            app:boxStrokeColor="@android:color/white"
+            app:boxBackgroundColor="@color/background_dark"
+            app:boxCornerRadiusTopStart="6dp"
+            app:boxCornerRadiusTopEnd="6dp"
+            app:boxCornerRadiusBottomStart="6dp"
+            app:boxCornerRadiusBottomEnd="6dp"
+            app:boxStrokeWidth="1dp"
+            app:startIconDrawable="@drawable/ic_person"
+            app:startIconTint="@android:color/white"
+            app:boxCollapsedPaddingTop="8dp"
+            app:boxStrokeWidthFocused="2dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emergency_contact2_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Emergency Contact 2 Phone Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emergency_phone2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/emergency_contact2_layout"
+            android:hint="@string/emergency_contact_2_phone"
+            app:hintTextColor="@android:color/white"
+            app:boxStrokeColor="@android:color/white"
+            app:boxBackgroundColor="@color/background_dark"
+            app:boxCornerRadiusTopStart="6dp"
+            app:boxCornerRadiusTopEnd="6dp"
+            app:boxCornerRadiusBottomStart="6dp"
+            app:boxCornerRadiusBottomEnd="6dp"
+            app:boxStrokeWidth="1dp"
+            app:startIconDrawable="@android:drawable/stat_sys_phone_call"
+            app:startIconTint="@android:color/white"
+            app:boxCollapsedPaddingTop="8dp"
+            app:boxStrokeWidthFocused="2dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emergency_phone2_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Save Emergency Contacts Button -->
+        <Button
+            android:id="@+id/save_emergency_contacts_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/emergency_phone2_layout"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/orange"
+            android:text="@string/save_emergency_contacts"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            style="@style/Widget.Material3.Button" />
 
         <!-- Emergency services title -->
         <TextView
@@ -165,39 +251,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="369dp"
+            android:layout_below="@+id/save_emergency_contacts_button"
+            android:layout_marginTop="60dp"
             android:text="@string/emergency_services"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <!-- Police card -->
         <RelativeLayout
             android:id="@+id/police_card"
-            android:layout_width="165dp"
-            android:layout_height="207dp"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="439dp"
+            android:layout_below="@+id/emergency_services_title"
+            android:layout_marginTop="16dp"
             android:background="@drawable/emergency_card_background"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            android:elevation="2dp">
 
             <TextView
                 android:id="@+id/police_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="23dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/police"
                 android:textColor="#FFA6A1A1"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/police_icon"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="79dp"
+                android:layout_marginTop="50dp"
                 android:contentDescription="Police icon"
                 android:src="@drawable/police" />
 
@@ -206,10 +295,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="142dp"
+                android:layout_marginTop="100dp"
                 android:text="119"
                 android:textColor="@android:color/white"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
@@ -217,30 +306,32 @@
         <!-- Fire card -->
         <RelativeLayout
             android:id="@+id/fire_card"
-            android:layout_width="165dp"
-            android:layout_height="207dp"
-            android:layout_marginStart="222dp"
-            android:layout_marginTop="439dp"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="200dp"
+            android:layout_below="@+id/emergency_services_title"
+            android:layout_marginTop="16dp"
             android:background="@drawable/emergency_card_background"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            android:elevation="2dp">
 
             <TextView
                 android:id="@+id/fire_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="23dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/fire"
                 android:textColor="#FFA6A1A1"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/fire_icon"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="79dp"
+                android:layout_marginTop="50dp"
                 android:contentDescription="Fire icon"
                 android:src="@drawable/fire" />
 
@@ -249,10 +340,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="142dp"
+                android:layout_marginTop="100dp"
                 android:text="110"
                 android:textColor="@android:color/white"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
@@ -260,30 +351,32 @@
         <!-- Ambulance card -->
         <RelativeLayout
             android:id="@+id/ambulance_card"
-            android:layout_width="165dp"
-            android:layout_height="207dp"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="672dp"
+            android:layout_below="@+id/police_card"
+            android:layout_marginTop="12dp"
             android:background="@drawable/emergency_card_background"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            android:elevation="2dp">
 
             <TextView
                 android:id="@+id/ambulance_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="23dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/ambulance"
                 android:textColor="#FFA6A1A1"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/ambulance_icon"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="79dp"
+                android:layout_marginTop="50dp"
                 android:contentDescription="Ambulance icon"
                 android:src="@drawable/ambulance" />
 
@@ -292,10 +385,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="134dp"
+                android:layout_marginTop="100dp"
                 android:text="1990"
                 android:textColor="@android:color/white"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
@@ -303,42 +396,44 @@
         <!-- Customer care card -->
         <RelativeLayout
             android:id="@+id/customer_care_card"
-            android:layout_width="165dp"
-            android:layout_height="207dp"
-            android:layout_marginStart="222dp"
-            android:layout_marginTop="672dp"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="200dp"
+            android:layout_below="@+id/fire_card"
+            android:layout_marginTop="12dp"
             android:background="@drawable/emergency_card_background"
             android:clickable="true"
-            android:focusable="true">
-
-            <ImageView
-                android:id="@+id/ambulance_icon2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="79dp"
-                android:contentDescription="Ambulance icon"
-                android:src="@drawable/customercare" />
+            android:focusable="true"
+            android:elevation="2dp">
 
             <TextView
                 android:id="@+id/customer_care_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="23dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/customer_care"
                 android:textColor="#FFA6A1A1"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ambulance_icon2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:contentDescription="Customer care icon"
+                android:src="@drawable/customercare" />
 
             <TextView
                 android:id="@+id/customer_care_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="134dp"
+                android:layout_marginTop="100dp"
                 android:text="1331"
                 android:textColor="@android:color/white"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>

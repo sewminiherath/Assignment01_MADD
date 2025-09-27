@@ -79,18 +79,22 @@
                 android:src="@drawable/ic_search"
                 android:contentDescription="@string/search_icon" />
 
-            <!-- Search placeholder text -->
-            <TextView
-                android:id="@+id/search_placeholder"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <!-- Search input field -->
+            <EditText
+                android:id="@+id/search_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginStart="45dp"
                 android:layout_marginEnd="50dp"
-                android:layout_centerVertical="true"
-                android:text="@string/search_hint"
+                android:background="@android:color/transparent"
+                android:hint="@string/search_hint"
                 android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
                 android:textSize="12sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1" />
 
             <!-- Camera icon -->
             <ImageView
@@ -120,12 +124,15 @@
 
             <!-- Planner button -->
             <RelativeLayout
+                android:id="@+id/planner_button_container"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/nav_button_background"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true">
 
                 <ImageView
                     android:id="@+id/planner_icon"
@@ -232,10 +239,10 @@
                     android:layout_height="35dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="8dp"
-                    android:src="@drawable/ic_emergency"
-                    android:contentDescription="@string/emergency_icon"
                     android:clickable="true"
-                    android:focusable="true" />
+                    android:contentDescription="@string/emergency_icon"
+                    android:focusable="true"
+                    android:src="@drawable/ambulance" />
 
                 <TextView
                     android:id="@+id/emergency_text"
@@ -310,11 +317,14 @@
                 android:weightSum="2">
 
                 <RelativeLayout
+                    android:id="@+id/destination1_card"
                     android:layout_width="0dp"
                     android:layout_height="207dp"
                     android:layout_weight="1"
                     android:layout_marginEnd="8dp"
-                    android:background="@drawable/destination_card_background">
+                    android:background="@drawable/destination_card_background"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <ImageView
                         android:id="@+id/destination1_image"
@@ -329,10 +339,13 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/destination2_card"
                     android:layout_width="0dp"
                     android:layout_height="207dp"
                     android:layout_weight="1"
-                    android:background="@drawable/destination_card_background">
+                    android:background="@drawable/destination_card_background"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <ImageView
                         android:id="@+id/destination2_image"
@@ -358,11 +371,14 @@
                 android:baselineAligned="false">
 
                 <RelativeLayout
+                    android:id="@+id/destination3_card"
                     android:layout_width="0dp"
                     android:layout_height="207dp"
                     android:layout_weight="1"
                     android:layout_marginEnd="8dp"
-                    android:background="@drawable/destination_card_background">
+                    android:background="@drawable/destination_card_background"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <ImageView
                         android:id="@+id/destination3_image"
@@ -377,10 +393,13 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/destination4_card"
                     android:layout_width="0dp"
                     android:layout_height="207dp"
                     android:layout_weight="1"
-                    android:background="@drawable/destination_card_background">
+                    android:background="@drawable/destination_card_background"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <ImageView
                         android:id="@+id/destination4_image"

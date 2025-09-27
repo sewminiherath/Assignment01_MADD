@@ -23,11 +23,14 @@
             <!-- Back Arrow -->
             <ImageView
                 android:id="@+id/back_arrow"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_back_arrow"
-                android:alpha="0.5"
-                android:rotation="-90" />
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="@string/back_button_description"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp" />
 
             <!-- Spacer -->
             <View
@@ -53,6 +56,7 @@
 
             <!-- Date -->
             <TextView
+                android:id="@+id/date_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="05th September,2025"
@@ -63,11 +67,25 @@
 
             <!-- Calendar Icon -->
             <ImageView
+                android:id="@+id/calendar_icon"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/ic_calendar"
                 android:alpha="0.5"
-                android:layout_marginStart="8dp" />
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Clock Icon -->
+            <ImageView
+                android:id="@+id/clock_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_clock"
+                android:alpha="0.5"
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:focusable="true" />
 
         </LinearLayout>
 

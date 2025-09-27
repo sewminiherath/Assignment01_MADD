@@ -1,8 +1,11 @@
 package com.example.newmobileapp
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import android.view.inputmethod.EditorInfo
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -16,8 +19,8 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var greetingText: TextView
     private lateinit var locationText: TextView
     private lateinit var profileImage: ImageView
-    private lateinit var searchBar: TextView
-    private lateinit var plannerButton: TextView
+    private lateinit var searchInput: EditText
+    private lateinit var plannerButton: View
     private lateinit var exploreButton: TextView
     private lateinit var itinerariesButton: TextView
     private lateinit var emergencyButton: View
@@ -28,6 +31,13 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var navHomeIcon: ImageView
     private lateinit var navNotificationsIcon: ImageView
     private lateinit var navProfileIcon: ImageView
+    
+    // Destination cards
+    private lateinit var destination1Card: View
+    private lateinit var destination2Card: View
+    private lateinit var destination3Card: View
+    private lateinit var destination4Card: View
+    
     // private lateinit var recommendedRecyclerView: RecyclerView // Commented out for static layout
     // private lateinit var bottomNavigation: BottomNavigationView // Commented out for static layout
 
@@ -52,8 +62,8 @@ class HomeActivity : AppCompatActivity() {
             greetingText = findViewById(R.id.greeting_text)
             locationText = findViewById(R.id.location_text)
             profileImage = findViewById(R.id.profile_image)
-            searchBar = findViewById(R.id.search_placeholder)
-            plannerButton = findViewById(R.id.planner_text)
+            searchInput = findViewById(R.id.search_input)
+            plannerButton = findViewById(R.id.planner_button_container)
             exploreButton = findViewById(R.id.explore_text)
             itinerariesButton = findViewById(R.id.itineraries_text)
             emergencyButton = findViewById(R.id.emergency_button_container)
@@ -71,6 +81,12 @@ class HomeActivity : AppCompatActivity() {
             navHomeIcon = findViewById(R.id.nav_home_icon)
             navNotificationsIcon = findViewById(R.id.nav_notifications_icon)
             navProfileIcon = findViewById(R.id.nav_profile_icon)
+            
+            // Initialize destination cards
+            destination1Card = findViewById(R.id.destination1_card)
+            destination2Card = findViewById(R.id.destination2_card)
+            destination3Card = findViewById(R.id.destination3_card)
+            destination4Card = findViewById(R.id.destination4_card)
             
                 // Debug: Check if profile icon is found
                 if (navProfileIcon != null) {
@@ -92,17 +108,31 @@ class HomeActivity : AppCompatActivity() {
             Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show()
         }
 
-        searchBar.setOnClickListener {
-            Toast.makeText(this, "Search clicked", Toast.LENGTH_SHORT).show()
+        // Search functionality - search in Chrome when user presses enter
+        searchInput.setOnEditorActionListener { _, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                performSearch()
+                true
+            } else {
+                false
+            }
         }
 
         plannerButton.setOnClickListener {
-            val intent = Intent(this, Planner2Activity::class.java)
-            startActivity(intent)
+            Toast.makeText(this, "Planner button clicked!", Toast.LENGTH_SHORT).show()
+            try {
+                val intent = Intent(this, Planner2Activity::class.java)
+                Toast.makeText(this, "Intent created for Planner2Activity", Toast.LENGTH_SHORT).show()
+                startActivity(intent)
+                Toast.makeText(this, "Navigating to Planner...", Toast.LENGTH_SHORT).show()
+            } catch (e: Exception) {
+                Toast.makeText(this, "Error navigating to Planner: ${e.message}", Toast.LENGTH_LONG).show()
+            }
         }
 
         exploreButton.setOnClickListener {
-            val intent = Intent(this, RecommendedActivity::class.java)
+            Toast.makeText(this, "Exploring destinations...", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, AnuradhapuraDetailActivity::class.java)
             startActivity(intent)
         }
 
@@ -129,12 +159,29 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, RecommendedActivity::class.java)
             startActivity(intent)
         }
+        
+        // Destination card click listeners
+        destination1Card.setOnClickListener {
+            openWebsite("https://www.srilanka.travel/anuradhapura")
+        }
+        
+        destination2Card.setOnClickListener {
+            openWebsite("https://www.srilanka.travel/anuradhapura")
+        }
+        
+        destination3Card.setOnClickListener {
+            openWebsite("https://www.srilanka.travel/jaffna")
+        }
+        
+        destination4Card.setOnClickListener {
+            openWebsite("https://www.srilanka.travel/rawana-falls")
+        }
     }
 
     private fun setupBottomNavigation() {
         navLocationIcon.setOnClickListener {
-            val intent = Intent(this, RecommendedActivity::class.java)
-            startActivity(intent)
+            Toast.makeText(this, "Opening Google Maps...", Toast.LENGTH_SHORT).show()
+            openGoogleMaps("7.8731,80.7718") // Sri Lanka center coordinates
         }
 
         navHomeIcon.setOnClickListener {
@@ -179,6 +226,85 @@ class HomeActivity : AppCompatActivity() {
             }
         } catch (e: Exception) {
             Toast.makeText(this, "Error in handleEmergencyClick: ${e.message}", Toast.LENGTH_LONG).show()
+        }
+    }
+    
+    private fun openGoogleMaps(coordinates: String) {
+        try {
+            // Try to open Google Maps app first
+            val mapIntent = Intent(Intent.ACTION_VIEW, Uri.parse("google.navigation:q=$coordinates"))
+            mapIntent.setPackage("com.google.android.apps.maps")
+            
+            if (mapIntent.resolveActivity(packageManager) != null) {
+                startActivity(mapIntent)
+            } else {
+                // Fallback to web browser with Google Maps
+                val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps?q=$coordinates"))
+                startActivity(webIntent)
+                Toast.makeText(this, "Opening Google Maps in browser...", Toast.LENGTH_SHORT).show()
+            }
+        } catch (e: Exception) {
+            Toast.makeText(this, "Error opening maps: ${e.message}", Toast.LENGTH_SHORT).show()
+            // Final fallback - try generic maps intent
+            try {
+                val fallbackIntent = Intent(Intent.ACTION_VIEW, Uri.parse("geo:$coordinates"))
+                startActivity(fallbackIntent)
+            } catch (e2: Exception) {
+                Toast.makeText(this, "No maps app found", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+    
+    private fun openWebsite(url: String) {
+        try {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(intent)
+                Toast.makeText(this, "Opening website...", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "No browser app found", Toast.LENGTH_SHORT).show()
+            }
+        } catch (e: Exception) {
+            Toast.makeText(this, "Error opening website: ${e.message}", Toast.LENGTH_SHORT).show()
+        }
+    }
+    
+    private fun performSearch() {
+        try {
+            val searchQuery = searchInput.text.toString().trim()
+            
+            if (searchQuery.isEmpty()) {
+                Toast.makeText(this, "Please enter a search term", Toast.LENGTH_SHORT).show()
+                return
+            }
+            
+            // Create Google search URL
+            val searchUrl = "https://www.google.com/search?q=${Uri.encode(searchQuery)}"
+            
+            // Try to open in Chrome first
+            val chromeIntent = Intent(Intent.ACTION_VIEW, Uri.parse(searchUrl)).apply {
+                setPackage("com.android.chrome")
+            }
+            
+            if (chromeIntent.resolveActivity(packageManager) != null) {
+                startActivity(chromeIntent)
+                Toast.makeText(this, "Searching for '$searchQuery' in Chrome", Toast.LENGTH_SHORT).show()
+            } else {
+                // Fallback to default browser
+                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(searchUrl))
+                if (browserIntent.resolveActivity(packageManager) != null) {
+                    startActivity(browserIntent)
+                    Toast.makeText(this, "Searching for '$searchQuery' in browser", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, "No browser app found", Toast.LENGTH_SHORT).show()
+                }
+            }
+            
+            // Clear the search input
+            searchInput.setText("")
+            
+        } catch (e: Exception) {
+            Toast.makeText(this, "Error performing search: ${e.message}", Toast.LENGTH_SHORT).show()
         }
     }
 }

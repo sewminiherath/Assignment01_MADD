@@ -44,10 +44,25 @@
 
     <!-- Profile screen strings -->
     <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
     <string name="name">Name</string>
     <string name="your_information">Your Information</string>
     <string name="full_name">Full Name</string>
     <string name="mobile">Mobile</string>
+    <string name="address">Address</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="emergency_contact_1">Emergency Contact 1</string>
+    <string name="emergency_contact_2">Emergency Contact 2</string>
+    <string name="emergency_contact_1_phone">Emergency Contact 1 Phone</string>
+    <string name="emergency_contact_2_phone">Emergency Contact 2 Phone</string>
+    <string name="save_emergency_contacts">Save Emergency Contacts</string>
+    <string name="save_changes">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_photo">Change photo</string>
+    <string name="profile_image_description">Profile image</string>
     <string name="your_preferences">Your Preferences</string>
     <string name="add_emergency_contacts">Add emergency contacts</string>
     <string name="additional_settings">Additional Settings</string>
@@ -56,12 +71,11 @@
 
     <!-- Create Account strings -->
     <string name="create_account">Create Account</string>
-    <string name="first_name">First Name</string>
-    <string name="last_name">Last Name</string>
-    <string name="address">Address</string>
     <string name="contact_number">Contact Number</string>
     <string name="email">E-mail</string>
     <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
     <string name="next">Next</string>
 
     <!-- Success screen strings -->
@@ -100,7 +114,6 @@
     <string name="henri_allen">Henri Allen</string>
     <string name="contact_number_placeholder">+94765559561</string>
     <string name="email_placeholder">alex9995@gmail.com</string>
-    <string name="female">Female</string>
     <string name="one_contact">1 contact</string>
 
     <!-- Planner screen strings -->
@@ -118,6 +131,7 @@
 
     <!-- Additional content descriptions -->
     <string name="calendar_icon">Calendar icon</string>
+    <string name="clock_icon">Clock icon</string>
     <string name="dropdown_icon">Dropdown icon</string>
 
     <!-- Forgot Password screen strings -->

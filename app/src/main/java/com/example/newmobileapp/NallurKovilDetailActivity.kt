@@ -1,6 +1,7 @@
 package com.example.newmobileapp
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -52,7 +53,8 @@ class NallurKovilDetailActivity : AppCompatActivity() {
     private fun setupClickListeners() {
         // Bottom navigation click listeners
         locationIcon.setOnClickListener {
-            // Already on location page, do nothing
+            Toast.makeText(this, "Opening Google Maps for Nallur Kovil...", Toast.LENGTH_SHORT).show()
+            openGoogleMaps("9.6833,79.9056") // Nallur Kovil coordinates
         }
 
         homeIcon.setOnClickListener {
@@ -101,8 +103,34 @@ class NallurKovilDetailActivity : AppCompatActivity() {
         PlannerManager.addToPlanner(plannerItem)
         Toast.makeText(this, "Added to Planner!", Toast.LENGTH_SHORT).show()
         
-        // Navigate to Planner2
-        val intent = Intent(this, Planner2Activity::class.java)
+        // Navigate to Planner3
+        val intent = Intent(this, Planner3Activity::class.java)
         startActivity(intent)
+    }
+    
+    private fun openGoogleMaps(coordinates: String) {
+        try {
+            // Try to open Google Maps app first
+            val mapIntent = Intent(Intent.ACTION_VIEW, Uri.parse("google.navigation:q=$coordinates"))
+            mapIntent.setPackage("com.google.android.apps.maps")
+            
+            if (mapIntent.resolveActivity(packageManager) != null) {
+                startActivity(mapIntent)
+            } else {
+                // Fallback to web browser with Google Maps
+                val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps?q=$coordinates"))
+                startActivity(webIntent)
+                Toast.makeText(this, "Opening Google Maps in browser...", Toast.LENGTH_SHORT).show()
+            }
+        } catch (e: Exception) {
+            Toast.makeText(this, "Error opening maps: ${e.message}", Toast.LENGTH_SHORT).show()
+            // Final fallback - try generic maps intent
+            try {
+                val fallbackIntent = Intent(Intent.ACTION_VIEW, Uri.parse("geo:$coordinates"))
+                startActivity(fallbackIntent)
+            } catch (e2: Exception) {
+                Toast.makeText(this, "No maps app found", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }

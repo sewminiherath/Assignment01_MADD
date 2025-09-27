@@ -59,10 +59,10 @@
             android:name=".NotificationsActivity"
             android:exported="false"
             android:theme="@style/Theme.MyApplication10" />
-        <activity
-            android:name=".HomeExploreActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MyApplication10" />
+<!--        <activity-->
+<!--            android:name=".HomeExploreActivity"-->
+<!--            android:exported="false"-->
+<!--            android:theme="@style/Theme.MyApplication10" />-->
         <activity
             android:name=".ProfileActivity"
             android:exported="false"
@@ -85,6 +85,14 @@
             android:theme="@style/Theme.MyApplication10" />
         <activity
             android:name=".Recommended2Activity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication10" />
+        <activity
+            android:name=".SigiriyaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication10" />
+        <activity
+            android:name=".AnuradhapuraActivity"
             android:exported="false"
             android:theme="@style/Theme.MyApplication10" />
         <activity

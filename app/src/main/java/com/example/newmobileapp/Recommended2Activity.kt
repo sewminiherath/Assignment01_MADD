@@ -54,7 +54,8 @@ class Recommended2Activity : AppCompatActivity() {
     private fun setupClickListeners() {
         // Navigation click listeners
         navLocation.setOnClickListener {
-            // Already on recommended page, do nothing or show feedback
+            Toast.makeText(this, "Opening Google Maps...", Toast.LENGTH_SHORT).show()
+            openGoogleMaps("7.8731,80.7718") // Sri Lanka center coordinates
         }
 
         navHome.setOnClickListener {
@@ -118,6 +119,32 @@ class Recommended2Activity : AppCompatActivity() {
             startActivity(intent)
         } catch (e: Exception) {
             Toast.makeText(this, "Unable to open website", Toast.LENGTH_SHORT).show()
+        }
+    }
+    
+    private fun openGoogleMaps(coordinates: String) {
+        try {
+            // Try to open Google Maps app first
+            val mapIntent = Intent(Intent.ACTION_VIEW, Uri.parse("google.navigation:q=$coordinates"))
+            mapIntent.setPackage("com.google.android.apps.maps")
+            
+            if (mapIntent.resolveActivity(packageManager) != null) {
+                startActivity(mapIntent)
+            } else {
+                // Fallback to web browser with Google Maps
+                val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps?q=$coordinates"))
+                startActivity(webIntent)
+                Toast.makeText(this, "Opening Google Maps in browser...", Toast.LENGTH_SHORT).show()
+            }
+        } catch (e: Exception) {
+            Toast.makeText(this, "Error opening maps: ${e.message}", Toast.LENGTH_SHORT).show()
+            // Final fallback - try generic maps intent
+            try {
+                val fallbackIntent = Intent(Intent.ACTION_VIEW, Uri.parse("geo:$coordinates"))
+                startActivity(fallbackIntent)
+            } catch (e2: Exception) {
+                Toast.makeText(this, "No maps app found", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

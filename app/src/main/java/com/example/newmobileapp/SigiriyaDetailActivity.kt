@@ -63,7 +63,7 @@ class SigiriyaDetailActivity : AppCompatActivity() {
 
         // Add to planner button
         addToPlannerButton.setOnClickListener {
-            val intent = Intent(this, Planner2Activity::class.java)
+            val intent = Intent(this, Planner3Activity::class.java)
             startActivity(intent)
         }
     }
